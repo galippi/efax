@@ -8,7 +8,11 @@
 /* signals to be caught */
 
 #define ANSISIGS  SIGABRT, SIGFPE, SIGILL, SIGINT, SIGSEGV, SIGTERM
+#ifndef __CYGWIN__
 #define UNIXSIGS  SIGHUP, SIGQUIT, SIGIOT, SIGALRM
+#else
+#define UNIXSIGS  SIGHUP, SIGQUIT, SIGALRM
+#endif
 #define CATCHSIGS ANSISIGS, UNIXSIGS
 
 /* Bit order reversal table. */

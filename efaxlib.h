@@ -91,7 +91,7 @@ enum iformats { I_AUTO=0, I_PBM=1, I_FAX=2, I_TEXT=3, I_TIFF=4,
 		"DFAX", "PCX", "RAW", "DCX" } ;
 
 enum oformats { O_AUTO=0, O_PBM=1, O_FAX=2, O_PCL=3, O_PS=4, 
-		O_PGM=5, O_TEXT=6, O_TIFF_FAX=7, O_TIFF_RAW=8, O_DFAX=9, 
+		O_PGM=5, O_TXT=6, O_TIFF_FAX=7, O_TIFF_RAW=8, O_DFAX=9, 
 		O_TIFF=10, O_PCX=11, O_PCX_RAW=12, O_DCX=13 } ;
 
 #define OFORMATS { "AUTO", "PBM", "FAX", "PCL", "PS", \
