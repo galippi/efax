@@ -1,5 +1,11 @@
 VERSION_OLD = $(strip $(shell cat version.h))
 GIT_COMMIT_ID := $(shell git rev-parse --short --verify HEAD 2>/dev/null)
+#GIT_COMMIT_ID := aad9
+GIT_TAG_ID := $(shell git describe --tags $(GIT_COMMIT_ID) 2>/dev/null)
+
+ifneq ($(GIT_TAG_ID),)
+GIT_COMMIT_ID := $(GIT_TAG_ID)
+endif
 
 ifeq ($(GIT_COMMIT_ID),)
 GIT_COMMIT_ID := (git error)
