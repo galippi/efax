@@ -47,3 +47,7 @@ efaxos.o:	efaxos.c  efaxmsg.h efaxlib.h          efaxos.h
 efix.o:		efix.c    efaxmsg.h efaxlib.h           
 efaxlib.o:	efaxlib.c efaxmsg.h efaxlib.h           
 efaxmsg.o:	efaxmsg.c efaxmsg.h
+
+include version.mk
+efax.o: version.h
+efix.o: version.h

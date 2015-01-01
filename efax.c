@@ -1,6 +1,6 @@
-#define Copyright         "Copyright 1999 Ed Casas"
+#define Copyright         "Copyright 1999 Ed Casas\nModified by G. Liptak"
 
-#define Version		  "efax v 0.9a-001114"
+#define Version		  "efax v " GIT_COMMIT_ID
 
 /*
     Copyright (C) 1999  Ed Casas
@@ -75,6 +75,8 @@ const char *Usage =
 #include "efaxlib.h"
 #include "efaxmsg.h"
 #include "efaxos.h"
+
+#include "version.h"
 
 /* constants... */
 

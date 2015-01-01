@@ -1,6 +1,6 @@
-#define Copyright         "Copyright 1999 Ed Casas"
+#define Copyright         "Copyright 1999 Ed Casas\nModified by G. Liptak"
 
-#define Version		  "efix v 0.3"
+#define Version		  "efix v " GIT_COMMIT_ID
 
 /*
     Copyright (C) 1999  Ed Casas
@@ -73,6 +73,8 @@ const char *Usage =
 
 #include "efaxlib.h"
 #include "efaxmsg.h"
+
+#include "version.h"
 
 #ifndef INT_MAX
 #define INT_MAX 32767
